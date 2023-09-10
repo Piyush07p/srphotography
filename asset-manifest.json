@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/srphotography/static/css/main.a354689b.css",
+    "main.js": "/srphotography/static/js/main.f619674f.js",
+    "static/js/787.440c4889.chunk.js": "/srphotography/static/js/787.440c4889.chunk.js",
+    "index.html": "/srphotography/index.html",
+    "main.a354689b.css.map": "/srphotography/static/css/main.a354689b.css.map",
+    "main.f619674f.js.map": "/srphotography/static/js/main.f619674f.js.map",
+    "787.440c4889.chunk.js.map": "/srphotography/static/js/787.440c4889.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a354689b.css",
+    "static/js/main.f619674f.js"
+  ]
+}
