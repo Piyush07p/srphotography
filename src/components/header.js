@@ -19,6 +19,7 @@ const Header = () => {
             <nav className='nav_bar'>
                  <div className="logo">
                     <img width="40rem" src={require('./images/srlogo2.png')} alt='logo'/>
+               
                  </div>
                  <ul ref={hamUl}>
                     <NavLink className='navlink'  to="/">Home</NavLink>

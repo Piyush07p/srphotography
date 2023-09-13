@@ -128,14 +128,117 @@ const printItem=[
         buy:"Rs.  250",
     },
     {
-        name:"Color matte T-shirt ",
+        name:"Kids bottle",
         img:"./images/keychain.jpeg",
-        buy:"Rs.  350",
+        buy:"Rs. 350",
+    },
+    {
+        name:"Matte collar T-shirt ",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 350",
+    },
+    {
+        name:"Heart rotating lamp",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 900",
+    },
+    {
+        name:"Wall hanging photo frame ",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 250",
+    },
+    {
+        name:"Guitar wooden frame",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 420",
+    },
+    {
+        name:"Kids pencil box",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 150",
+    },
+    {
+        name:"Full sleeve T-shirt",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 350",
+    },
+    {
+        name:"2d mobile cover (rubber)",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 250 ",
+    },
+    {
+        name:"3d mobile cover (plastic)",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 200 ",
+    },
+    {
+        name:"Mask",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 50 ",
+    },
+    {
+        name:"Hexalamp",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 800 ",
+    },
+    {
+        name:"Rotating lamp",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 750 ",
     },
 
-    
-    
+    {
+        name:"Keychain double sided",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 99 ",
+    },
 
+    {
+        name:"Magic mirror",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 350 ",
+    },
+    {
+        name:"Stone frame",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 450 ",
+    },
+    {
+        name:"Kids school bag",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 400 ",
+    },
+    {
+        name:"Lunch box",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 250 ",
+    },
+    {
+        name:"Mouse pad",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 150 ",
+    },
+    {
+        name:"Cap",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 150 ",
+    },
+    {
+        name:"Magic mug",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 300 ",
+    },
+    {
+        name:"Inner mug",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 250 ",
+    },
+    {
+        name:"Heart handle mug",
+        img:"./images/keychain.jpeg",
+        buy:"Rs. 250 ",
+    },
 
 ]
 

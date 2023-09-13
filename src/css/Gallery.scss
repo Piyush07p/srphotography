@@ -10,10 +10,11 @@
 .upper_gal{
     
     width: 90%;
-    height: 23rem;
+    height: 30rem;
     >img{
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
 }
 .lower_gal{

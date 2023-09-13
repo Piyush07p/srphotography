@@ -25,6 +25,7 @@
             img{
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
             }
        }
        
@@ -62,103 +63,153 @@
         
     }
     
-    .detail_div{
-           
-            display: flex;
-            justify-content: center;
-            margin-top: 2rem;
-            width: 100vw;
-            padding:2rem 2.2rem;
-            >h1{
-                font-size: 2rem;
-                margin: 1rem 0 ;
-            }
-            .home_img{
+    // -------------------(detail-div)----------------
+           .detail_div{
+            width: 99vw;
+            // height: 30rem;
+
+            margin: 2rem 0;
+             display: flex;
+             padding: 2rem  4rem;
+            
+             .home_img{
+                // border: 2px solid;
                 width: 50vw;
-                height: 20rem;
-                margin: 1.2rem;
-                border-radius: 2rem;
                 display: flex;
-                >img{
-                    width: 50%;
-                    height: 50%;
-                    // border: 2px solid red;
-                    border-radius: 2rem;
-                    transition: all ease 0.5s;
-                    animation: floating 8s linear infinite;
-                    &:hover{
-                        transform: scale(1.02);
-                    }
-                    
-                }
-                @keyframes floating {
-                    0%{
-                        opacity: 1;
-                        transform: translateY(-20px);
-                    }
-                    25%{
-                        opacity: 1;
-                        transform: translateY(0px);
-                    }
-                    50%{
-                        opacity: 1;
-                        transform: translateY(-20px);
-                    }
-                    75%{
-                        opacity: 1;
-                        transform: translateY(0px);
-                    }
-                    100%{
-                        opacity: 1;
-                        transform: translateY(-20px);
+                div{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        animation: floatAnim 8s linear infinite;
                     }
                 }
+             }
+             @keyframes floatAnim {
+                0%{
+                    transform: translateY(0%);
+               
+                }
+                25%{
+                    transform: translateY(-10%);
+              
+                   
+                }
+                50%{
+                    transform: translateY(0%);
+              
+                   
+                }
+                75%{
+                    transform: translateY(-10%);
+              
+                }
+                100%{
+                    transform: translateY(0%);
+              
+                }
+            
             }
-            .home_about{
-                margin-right: 2rem;
+             .home_about{
                 width: 50vw;
-                background-color: rgb(223, 223, 255);
-                border-radius: 2rem 0 2rem 0;
-                margin-top:1rem ;
-                z-index: 10;
-                 h1{
-                    margin:3rem 1rem 0.1rem  2rem;
-                    font-size: 2.5rem;
-                 }
-                 h3{
-                        margin:  0 2.1rem;
-                 }
-                 p{
-                    margin: 2rem;
-                 }
+            
+                div{
+                    overflow: hidden;
+                    height: 20rem;
+                    margin-top: 5rem;
+                    padding:2.2rem 1rem;
+                    background-color: rgb(223, 223, 255);
+                    border-radius: 2rem 0 2rem 0;
+                    h1{
+                        margin:0.2rem 1rem;
+                        font-size: 2.5rem;
+                        
+                    }
+                    h3{
+                        margin: 0rem 1rem;
+                    }
+                    p{
+                        margin: 1rem;
+                    }
+                }
+             }
+
+            
            }
-    }
+           @media (max-width:630px){
+            .detail_div{
+                width: 99vw;
+                flex-direction: column;
+                align-items: center;
+                .home_img{
+                    // border: 2px solid;
+                    width: 80vw;
+                    height: 15rem;
+                    display: flex;
+                    div{
+    
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                 }
+                .home_about{
+                    width: 80vw;
+                    margin-top: 0;
+                
+                    div{
+                        height: 15rem;
+                        margin-top: 3rem;
+                        padding:1rem 1rem;
+                        background-color: rgb(223, 223, 255);
+                        border-radius: 2rem 0 2rem 0;
+                        h1{
+                            font-size: 1.2rem;
+                        }
+                        h3{
+                            font-size: 0.8rem;
+                        }
+                        p{
+                            font-size: 0.7rem;
+                        }
+                    }
+                 }
+    
+                
+                }
+           }
+
+    //-----------------------(end)-------------------
+
+    //-------------------------(book_us_now)------------------
 
     >.book_us_div{
         width: 100%;
-        height: 12rem;
         // border: 2px solid;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 1rem 0;
         >div{
-            width: 85%;
-            height: 10rem;
+            width:85%;
+            padding: 0.7rem 0;
             background-color: rgb(223, 223, 255);
             border-radius: 2rem 0 2rem 0;
             >h1{
-                margin: 1.2rem;
+                margin: 1.5rem;
 
             }
             >h3{
-                margin: 1.2rem;
+                margin: 1.5rem;
             }
             >button{
                 width: 6rem;
                 height: 2rem;
                 border-radius: 4px;
                 border: none;
-                margin:0.5rem 1.2rem;
+                margin:0.5rem 1.5rem;
                 background-color:rgb(69, 68, 68);
                 cursor: pointer;
                > &:hover{
@@ -272,7 +323,7 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            height: 22rem;
+            height: 45rem;
             overflow: hidden;
             margin: 0 2.5rem;
             >div{
@@ -318,69 +369,6 @@
     }
 }
 
-// @media (max-width:550px){
-//     .detail_div{
-//         display: flex;
-//         justify-content: space-between;
-//         flex-wrap: wrap;
-//         flex-direction: column;
-//         align-items: center;
-//         margin-top: 2rem;
-//         margin: 1rem;
-//         // background-color: red;
-//         padding:2rem 2.2rem;
-       
-//         >h1{
-//             font-size: 1rem;
-//             margin: 1rem 0 ;
-//         }
-//         .home_img{
-        
-//             width: 100%;
-//             margin: 1.2rem;
-//             border-radius: 2rem;
-//             flex-direction: column;
-//             overflow: unset;
-//             display: flex;
-//             >img{
-//                 width: 100%;
-//                 height: 100%;
-//                 // border: 2px solid;
-//                 // z-index: 100;
-//                 // background-color: pink;
-//                 // border: 2px solid red;
-//                 border-radius: 2rem;
-//                 transition: all ease 0.5s;
-//                 &:hover{
-//                     transform: scale(1.02);
-//                 }
-                
-//             }
-            
-//         }
-//         .home_about{
-//             width: 100rem;
-//             // margin-right: 1rem;
-//             margin-top:1rem ;
-
-//             background-color: rgb(223, 223, 255);
-//             border-radius: 2rem 0 2rem 0;
-//             margin-top:1rem ;
-//             z-index: 10;
-//              h1{
-//                 margin:3rem 1rem 0.1rem  2rem;
-//                 font-size: 1rem;
-//              }
-//              h3{
-//                     margin:  0 2.1rem;
-//              }
-//              p{
-//                 margin: 2rem;
-//              }
-//        }
-
-        
-// }
 //   //--------------------(about)---------
 
 //     .book_us_div{
