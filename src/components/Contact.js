@@ -1,24 +1,46 @@
 import React from 'react'
 import '../css/contact.scss'
+import {BsInstagram,BsFacebook, BsDashCircle} from 'react-icons/bs'
 
 const Contact = () => {
   return (
     <>
       <section className='contact_sec'>
                <div className="contact_div">
-               <form action="">
+                <div>
+                     <h1>Contact Us</h1>
+                     <div>
+                        <h3>Address</h3>
+                        <p>Near Tehsil, Bichi road, Churhat</p>
+                        <h3>Contact No.</h3>
+                        <p>+91 9098171233</p>
+                        <p>+91 9589703194</p>
+
+                        <h3>Email Id</h3>
+                        <p>srphotography0000@gmail.com</p>
+
+                        <div className="follow">
+                          <h2>Follow us</h2>
+                              <i ><BsInstagram/></i>
+                              <i><BsFacebook/></i>
+
+                        </div>
+                     </div>
+                </div>
+               <form action="https://formspree.io/f/xnqyqkgj" method="POST">
                         <label htmlFor="">Your name</label><br />
-                        <input type="text" />
+                        <input  placeholder='enter name' name='name' type="text" />
                         <br />
                         <label htmlFor="">Your email</label><br />
-                        <input type="text" />
+                        <input placeholder='enter email' required name='email' type="text" />
                         <br />
                         <label htmlFor="">Your phone</label><br />
-                        <input type="text" />
+                        <input required placeholder='enter phone' name='phone' type="text" />
                         <br />
-                        <label htmlFor="">Message</label><br />
-                       <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <label name='msg' htmlFor="">Message</label><br />
+                       <textarea placeholder='enter message' name="" id="" cols="30" rows="10"></textarea>
                         <br />
+                        <button>submit</button>
 
                 </form>
                </div>

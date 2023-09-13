@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import '../css/header.scss'
 import {NavLink} from "react-router-dom";
 import {RxHamburgerMenu} from "react-icons/rx"
+
 const Header = () => {
      const hamUl= useRef("")
      const hamB = useRef("")
@@ -17,7 +18,7 @@ const Header = () => {
        <>
             <nav className='nav_bar'>
                  <div className="logo">
-                  LOGO
+                    <img width="40rem" src={require('./images/srlogo2.png')} alt='logo'/>
                  </div>
                  <ul ref={hamUl}>
                     <NavLink className='navlink'  to="/">Home</NavLink>

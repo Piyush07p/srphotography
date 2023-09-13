@@ -1,0 +1,49 @@
+.galSec{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        margin: 1rem 0;
+    }
+}
+.upper_gal{
+    
+    width: 90%;
+    height: 23rem;
+    >img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.lower_gal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    >div{
+        width: 13rem;
+        height: 13rem;
+        margin: 1rem;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media (max-width:480px){
+    .lower_gal{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        >div{
+            width: 85%;
+            height:16rem;
+            margin: 1rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

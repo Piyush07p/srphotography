@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import '../css/services.scss'
-import serviceData from '../Api/service-data'
+import serviceData from '../Api/service-data';
+import { NavLink } from 'react-router-dom';
 const Services = () => {
 
   const [serData, setserData] = useState(serviceData)
@@ -15,8 +16,14 @@ const Services = () => {
                       <>
                          <div className='service_card'>
                              <h3>{e.name}</h3>
-                             <img src={e.link} alt='img' />
-                            <button>Book</button>
+                            <div className='services_img'>
+                              <img src={require(`${e.link}`)} alt='img' />
+                            </div>
+                            <div>
+                            <button>
+                              <NavLink style={{textDecoration:"none", color: "#fff"}} to="/Booking">Book</NavLink>
+                            </button>
+                            </div>
                          </div>
                       </>
                     )

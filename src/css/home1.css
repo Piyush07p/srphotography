@@ -1,0 +1,13 @@
+@media (max-width:550px){
+    .detail_div{
+        border: 2px solid;
+        flex-direction: column;
+    }
+    .home_img{
+        width: 100vw;
+    }
+    .home_about{
+        width: 100%;
+        background-color: red;
+    }
+}
