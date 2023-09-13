@@ -26,10 +26,10 @@ const Home = () => {
       <section className='home_sec'>
         <div className='slider_div'>
           <div>
-            <img className='img' width=" 30rem" src={require("./images/cover_photo.jpg")} alt="" />
-            <img className='img' width=" 30rem" src={require("./images/cover_photo.jpg")} alt="" />
-            <img className='img' width=" 30rem" src={require("./images/cover_photo.jpg")} alt="" />
-            <img className='img' width=" 30rem" src={require("./images/cover_photo.jpg")} alt="" />
+            <img className='img' width=" 30rem" src={require("./images/home2.JPG")} alt="" />
+            <img className='img' width=" 30rem" src={require("./images/home1.JPG")} alt="" />
+            <img className='img' width=" 30rem" src={require("./images/home3.JPG")} alt="" />
+            <img className='img' width=" 30rem" src={require("./images/home4.JPG")} alt="" />
 
           </div>
         </div>

@@ -6,24 +6,22 @@
 }
 .home_sec{
     width: 100%;
-    height: 100vh;
-    // overflow: hidden;
+
     >.slider_div{
-        width: inherit;
+        width: 100vw;
         margin: 0.2rem 0;
-        height: 100%;
+        height: 85vh;
         box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
         display: flex;
         overflow: hidden;
        >div{
         display: flex;
-        width:100%;
-        // border: 2px solid red;
+        width:400vw;
         height: 100%;  
         transition: all 1.5s ease;   
-        animation: slide-img linear infinite 15s;
+        animation: slide-img linear infinite 30s;
             img{
-                width: 100%;
+                width: 100vw;
                 height: 100%;
                 object-fit: cover;
             }
@@ -34,33 +32,97 @@
             transform: translateX(0%);
        
         }
-        16%{
+        8.33%{
             transform: translateX(0%);
       
            
         }
-        33%{
-            transform: translateX(-100%);
+        16.66%{
+            transform: translateX(-100vw);
       
            
         }
-        49%{
-            transform: translateX(-100%);
+        24.99%{
+            transform: translateX(-100vw);
       
         }
-        66%{
-            transform: translateX(-200%);
+        33.32%{
+            transform: translateX(-200vw);
       
         }
-        82%{
-            transform: translateX(-200%);
+        41.65%{
+            transform: translateX(-200vw);
+        }
+        49.98%{
+           
+            transform: translateX(-300vw);
+        }
+        58.31%{
+            transform: translateX(-300vw);
+        }
+        66.64%{
+            transform: translateX(-200vw);
+        }
+        74.97%{
+            transform: translateX(-200vw);
+        }
+        83.30%{
+            transform: translateX(-100vw);
+        }
+        91.63%{
+            transform: translateX(-100vw);
         }
         100%{
-           
-            transform: translateX(-300%);
+            transform: translateX(0);
         }
+      
+
     }
         
+    }
+    @media (max-width:900px){
+        >.slider_div{
+            width: 100vw;
+            margin: 0.2rem 0;
+            height: 40vh;
+            box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+            display: flex;
+            overflow: hidden;
+           >div{
+            display: flex;
+            width:400vw;
+            height: 100%;  
+            transition: all 1.5s ease;   
+            animation: slide-img linear infinite 15s;
+                img{
+                    width: 100vw;
+                    height: 100%;
+                    object-fit: cover;
+                }
+           }
+        }
+    }
+    @media (max-width:600px){
+        >.slider_div{
+            width: 100vw;
+            margin: 0.2rem 0;
+            height: 30vh;
+            box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+            display: flex;
+            overflow: hidden;
+           >div{
+            display: flex;
+            width:400vw;
+            height: 100%;  
+            transition: all 1.5s ease;   
+            animation: slide-img linear infinite 15s;
+                img{
+                    width: 100vw;
+                    height: 100%;
+                    object-fit: cover;
+                }
+           }
+        }
     }
     
     // -------------------(detail-div)----------------
@@ -346,7 +408,7 @@
                 }
                 >img{
                     width: 100%;
-                    height: 10rem;
+                    height: 12rem;
                     border-radius: 0.2rem;
                 }
                 >button{
@@ -369,47 +431,3 @@
     }
 }
 
-//   //--------------------(about)---------
-
-//     .book_us_div{
-//         width:100%;
-//         // height: 12rem;
-//         // border: 2px solid;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-
-//         >div{
-//             width: 20rem;
-//             height: 13rem;
-//             border: 2px solid;
-//             background-color: rgb(223, 223, 255);
-//             border-radius: 2rem 0 2rem 0;
-//             >h1{
-//                 margin: 1.2rem;
-
-//             }
-//             >h3{
-//                 margin: 1.2rem;
-//             }
-//             >button{
-//                 width: 6rem;
-//                 height: 2rem;
-//                 border-radius: 4px;
-//                 border: none;
-//                 margin:0.5rem 1.2rem;
-//                 background-color:rgb(69, 68, 68);
-//                 cursor: pointer;
-//                > &:hover{
-                    
-//                 }
-//                 >.book-btn{
-               
-//                     color: #fff;
-                    
-//                 }
-
-//             }
-//         }
-//     }
-// }

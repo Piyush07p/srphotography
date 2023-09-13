@@ -28,7 +28,7 @@ const Contact = () => {
                         </div>
                      </div>
                 </div>
-               <form action="https://formspree.io/f/xnqyqkgj" method="POST">
+               <form action="https://formspree.io/f/mwkdqpaq" method="POST">
                         <label htmlFor="">Your name</label><br />
                         <input  placeholder='enter name' name='name' type="text" />
                         <br />
@@ -38,8 +38,8 @@ const Contact = () => {
                         <label htmlFor="">Your phone</label><br />
                         <input required placeholder='enter phone' name='phone' type="text" />
                         <br />
-                        <label name='msg' htmlFor="">Message</label><br />
-                       <textarea placeholder='enter message' name="" id="" cols="30" rows="10"></textarea>
+                        <label htmlFor="">Message</label><br />
+                       <textarea  name='msg'  placeholder='enter message'  id="" cols="30" rows="10"></textarea>
                         <br />
                         <button>submit</button>
 
