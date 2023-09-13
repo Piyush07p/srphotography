@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/srphotography/static/css/main.a354689b.css",
-    "main.js": "/srphotography/static/js/main.f619674f.js",
+    "main.css": "/srphotography/static/css/main.5590f482.css",
+    "main.js": "/srphotography/static/js/main.d3d94cca.js",
     "static/js/787.440c4889.chunk.js": "/srphotography/static/js/787.440c4889.chunk.js",
+    "static/media/mat2.jpg": "/srphotography/static/media/mat2.3fb72000de549bdee937.jpg",
+    "static/media/mat1.jpg": "/srphotography/static/media/mat1.6245159c06d59eb01d26.jpg",
+    "static/media/photgraph1.png": "/srphotography/static/media/photgraph1.0a4900b9b731650b62c2.png",
+    "static/media/cover_photo.jpg": "/srphotography/static/media/cover_photo.4c1028e1e4e21d049e7c.jpg",
+    "static/media/srlogo.png": "/srphotography/static/media/srlogo.0dba8b5f964b50f58ba2.png",
+    "static/media/srlogo2.png": "/srphotography/static/media/srlogo2.f5d59c7cc60560cd32eb.png",
     "index.html": "/srphotography/index.html",
-    "main.a354689b.css.map": "/srphotography/static/css/main.a354689b.css.map",
-    "main.f619674f.js.map": "/srphotography/static/js/main.f619674f.js.map",
+    "main.5590f482.css.map": "/srphotography/static/css/main.5590f482.css.map",
+    "main.d3d94cca.js.map": "/srphotography/static/js/main.d3d94cca.js.map",
     "787.440c4889.chunk.js.map": "/srphotography/static/js/787.440c4889.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a354689b.css",
-    "static/js/main.f619674f.js"
+    "static/css/main.5590f482.css",
+    "static/js/main.d3d94cca.js"
   ]
 }
