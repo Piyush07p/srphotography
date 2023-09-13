@@ -37,7 +37,7 @@ const Counter=(e)=>{
               </main>
                 <div>
                     <div className='prod_img'>
-                          <img src={require('./images/keychain.jpeg')} alt="" />
+                          <img src={require('./images/print1.jpeg')} alt="" />
                     </div>
                     <div className='prod_desc'>
                          <h1>Prodcut name</h1>

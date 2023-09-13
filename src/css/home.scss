@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Figtree', sans-serif;
 }
+html,body{
+    overflow-x: hidden;
+}
 .home_sec{
     width: 100%;
 
@@ -448,6 +451,7 @@
             font-size: 1.3rem;
            }
            >div{
+                height: 47rem;
                >div{
                 border-radius: 0;
                 margin:1rem 0.2rem;

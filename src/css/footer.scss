@@ -1,6 +1,6 @@
 .footer_sec{
-    height: 5rem;
-    width: 96vw;
+    height: 5.4rem;
+    width: 100vw;
     background-color: rgb(223, 223, 255);
     margin-top: 4rem;
     display: flex;
@@ -11,17 +11,23 @@
     .cright{
         display: flex;
         p{
-            font-size: 1.5vw;
+            font-size: 1rem;
             margin-top: 2.5rem;
             margin-left: 1rem;
         }
     }
     .follow_foot{
-        h2{
-            margin: 0.6rem 0;
+        display: flex;
+        flex-direction: column;
+        h3{
+            margin: 0rem 1rem;
+            margin-top: 1rem;
         }
-        a{
-            margin:1rem 0.2rem;
+        div{
+            margin: 1.1rem;
+            a{
+                margin:2rem 0.2rem;
+            }
         }
     }
 }

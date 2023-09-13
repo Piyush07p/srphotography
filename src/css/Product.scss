@@ -8,7 +8,7 @@
         div{
               width: 24vw;
               position: absolute;
-              top: -10rem;
+              top: -20rem;
               height: 8rem;
               margin-top: 1rem;
               border-radius: 1rem;
@@ -113,4 +113,55 @@
         }
     }
 
+}
+
+@media (max-width:700px){
+    .Product_sec{
+
+        >main{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            div{
+                  width: 50vw;
+                  h3{
+                    text-align: center;
+                    font-size: 1rem;
+                    margin-top: 1rem;
+                  }
+                  >button{
+                     height: 1.6rem;
+                     font-size: 0.7rem;
+                  }
+    
+    
+            }
+        }
+        >div{
+            width: 100%;
+            // height: 90%;
+            // background-color: blue;
+            flex-direction: column;
+            align-items: center;
+            .prod_img{
+                  width: 80vw;
+                  height: 25rem;
+                  margin: 2rem 0;
+                //   background-color: pink;
+                  >img{
+                      width: 100%;
+                      height: 100%;
+                  }
+            }
+            .prod_desc{
+                    width: 90%;
+                    // background-color: red;
+                    margin: 1rem;
+                    h1{
+                        margin: 2rem;
+    
+                }
+            }
+        }
+    }
 }
