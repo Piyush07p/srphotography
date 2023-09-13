@@ -1,6 +1,10 @@
 import React from 'react'
 import '../css/contact.scss'
 import {BsInstagram,BsFacebook, BsWhatsapp} from 'react-icons/bs'
+import {FaLocationDot} from "react-icons/fa6"
+import {BiLogoGmail,BiSolidPhone} from "react-icons/bi"
+// import {SiGmail} from "react-icons/si"
+
 
 const Contact = () => {
   return (
@@ -11,13 +15,13 @@ const Contact = () => {
                      <h1>Contact Us</h1>
                      <div>
                         <h3>Address</h3>
-                        <p>Near Tehsil, Bichi road, Churhat, District-Sidhi (M.P.)-486771</p>
+                        <p><FaLocationDot/> Near Tehsil, Bichi road, Churhat, District-Sidhi (M.P.)-486771</p>
                         <h3>Contact No.</h3>
-                        <p>+91 9098171233</p>
-                        <p>+91 9589703194</p>
+                        <p><BiSolidPhone/> +91 9098171233</p>
+                        <p><BiSolidPhone/> +91 9589703194</p>
 
                         <h3>Email Id</h3>
-                        <p>srphotography0000@gmail.com</p>
+                        <p><BiLogoGmail/> srphotography0000@gmail.com</p>
 
                         <div className="follow">
                           <h2>Follow us</h2>
@@ -41,7 +45,7 @@ const Contact = () => {
                         <label htmlFor="">Message</label><br />
                        <textarea  name='msg'  placeholder='enter message'  id="" cols="30" rows="10"></textarea>
                         <br />
-                        <button>submit</button>
+                        <button>Submit</button>
 
                 </form>
                </div>

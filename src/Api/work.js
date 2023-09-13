@@ -1,59 +1,32 @@
 const workData=[
     {
         
-        link:"./images/mat1.jpg",
+        link:"./images/home1.JPG",
     },
     {
-        link:"./images/mat1.jpg",
+        link:"./images/gal6.JPG",
     },
     {
-        link:"./images/mat1.jpg",
+        link:"./images/gal20.jpg",
     },
     {
-        link:"./images/mat1.jpg",
+        link:"./images/gal19.JPG",
     },
     
     {
-        link:"./images/mat1.jpg",
+        link:"./images/gal8.JPG",
     },
     
     {
-        link:"./images/mat2.jpg",
+        link:"./images/gal10.JPG",
     },
     {
-        link:"./images/mat2.jpg",
+        link:"./images/gal18.JPG",
     },
     {
-        link:"./images/mat1.jpg",
+        link:"./images/gal7.JPG",
     },
     
-    {
-        link:"./images/mat1.jpg",
-    },
-    
-    {
-        link:"./images/mat2.jpg",
-    },
-    
-    {
-        link:"./images/mat2.jpg",
-    },
-    {
-        link:"./images/mat2.jpg",
-    },
-    
-    {
-        link:"./images/mat1.jpg",
-    },
-    {
-        link:"./images/mat1.jpg",
-    },
-    {
-        link:"./images/mat2.jpg",
-    },
-    
-    
-
 ]
 
 export default  workData

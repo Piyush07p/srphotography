@@ -17,9 +17,9 @@
        >div{
         display: flex;
         width:400vw;
-        height: 100%;  
+        height: 100%; 
         transition: all 1.5s ease;   
-        animation: slide-img linear infinite 30s;
+        animation: slide-img linear infinite 40s;
             img{
                 width: 100vw;
                 height: 100%;
@@ -192,6 +192,7 @@
                     }
                     p{
                         margin: 1rem;
+                        font-size: 1.15vw;
                     }
                 }
              }
@@ -362,18 +363,20 @@
     .printItem{
         width: 100%;
         // border: 2px solid;
-        >button{
-            position: absolute;
-            right: 9rem;
-            width: 6rem;
-            background-color:rgb(69, 68, 68);
-            color: #fff;
-            height: 2rem;
-            border-radius: 0.4rem;
-            border: none;
-            cursor: pointer;
-            margin: 1rem 0;
-
+        .expandBtn{
+            >button{
+                position: absolute;
+                right: 9rem;
+                width: 6rem;
+                background-color:rgb(69, 68, 68);
+                color: #fff;
+                height: 2rem;
+                border-radius: 0.4rem;
+                border: none;
+                cursor: pointer;
+                margin: 1rem 0;
+    
+            }
         }
         >h1{
             text-align: center;
@@ -385,7 +388,7 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            height: 45rem;
+            height: 49rem;
             overflow: hidden;
             margin: 0 2.5rem;
             >div{
@@ -428,6 +431,55 @@
             }
         }
 
+    }
+    @media (max-width:740px){
+        .printItem{
+            width: 100%;
+            
+           .expandBtn{
+              width: 100%;
+              display: flex;
+              justify-content: center;
+                button{
+                    position: unset;
+                }
+           }
+           >h1{
+            font-size: 1.3rem;
+           }
+           >div{
+               >div{
+                border-radius: 0;
+                margin:1rem 0.2rem;
+               }
+           }
+        }
+    }
+    @media (max-width:540px){
+        .printItem{
+            width: 100%;
+            
+           .expandBtn{
+              width: 100%;
+              display: flex;
+              justify-content: center;
+                button{
+                    position: unset;
+                }
+           }
+           >h1{
+            font-size: 1.4rem;
+           
+           }
+           >div{
+            padding: 0;
+               >div{
+                width: 80%;
+                border-radius: 0;
+                margin:1rem 0.2rem;
+               }
+           }
+        }
     }
 }
 

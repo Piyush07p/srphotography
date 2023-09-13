@@ -25,7 +25,7 @@ const Header = () => {
                     <NavLink className='navlink'  to="/">Home</NavLink>
                     <NavLink className='navlink'  to="/Services">Services</NavLink>
                     <NavLink className='navlink'  to="/Gallery">Gallery</NavLink>
-                    <NavLink className='navlink'  to="/About">About</NavLink>
+                    {/* <NavLink className='navlink'  to="/About">About</NavLink> */}
                     <NavLink className='navlink'  to="/Contact">Contact</NavLink>
                   </ul>
                   <p ref={hamB} onClick={navbarVis} className='hamBur'>

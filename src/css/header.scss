@@ -58,6 +58,7 @@
       .active{
         // color:rgb(140, 211, 33)
         color: red;
+        font-weight: 600;
       }
 
    }
@@ -84,6 +85,9 @@
           font-weight: 600;
           color: red;
           margin: 1rem;
+          img{
+            height: 3rem;
+          }
       }
       >ul{
         flex-direction: column;

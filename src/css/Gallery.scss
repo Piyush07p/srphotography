@@ -22,6 +22,7 @@
     flex-wrap: wrap;
     justify-content: center;
     >div{
+        flex-flow:column wrap;
         width: 13rem;
         height: 13rem;
         margin: 1rem;

@@ -16,7 +16,7 @@ const Home = () => {
     if (flag) {
       expDiv.current.style.height = "100%"
     } else {
-      expDiv.current.style.height = "45rem"
+      expDiv.current.style.height = "49rem"
     }
     setflag(!flag)
   }
@@ -52,12 +52,13 @@ const Home = () => {
             <div>
             <h1> <span style={{ color: "red" }}>S</span>r Photography</h1>
             <h3>Shankar Studio</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur earum hic delectus
-              reprehenderit neque dolore rerum quasi amet totam?
-              reprehenderit neque dolore rerum quasi amet totam?
-              reprehenderit neque dolore rerum quasi amet totam?
-             
-             
+            <p>"Hello, I'm RISHABH PATEL, a professional photographer with 6 years of
+               experience capturing moments and memories that last a lifetime. With a
+                keen eye for detail and a passion for creating beautiful images, I've
+                 been honored to win numerous local awards. I specialize in family portraiture 
+                 and child photography, wedding photography, fashion photography and many more and 
+                 my goal is to give families the gift of memories that will bring smiles to their faces 
+                 for years to come.
             </p>
             </div>
           </div>
@@ -144,11 +145,13 @@ const Home = () => {
             }
 
           </div>
-          <button onClick={expandDiv}>{(flag) ? "See More" : "See Less"}</button>
+          <main className='expandBtn'>
+            <button onClick={expandDiv}>{(flag) ? "See More" : "See Less"}</button>
+          </main>
         </div>
-        <div style={{ height: "10rem" }}>
+        {/* <div style={{ height: "10rem" }}>
 
-        </div>
+        </div> */}
       </section>
     </>
   )
