@@ -1,4 +1,8 @@
 import React, { useRef, useState } from 'react'
+
+import { GraphyContext} from "../Context/ProdContext";
+import {useContext} from "react";
+
 import '../css/Product.scss'
 const Product = () => {
 const quantt = useRef("")
@@ -27,6 +31,8 @@ const Counter=(e)=>{
 
    }
 }
+
+// const {prodname}= useContext(GraphyContext);
   return (
        <section className='Product_sec'>
               <main>
@@ -40,7 +46,7 @@ const Counter=(e)=>{
                           <img src={require('./images/print1.jpeg')} alt="" />
                     </div>
                     <div className='prod_desc'>
-                         <h1>Prodcut name</h1>
+                         <h1>Product name</h1>
                          <p>
                                 hjsrbfjkANE aejsfnlasnefoj a;oesf
                                  oaijfe oiajefnaoief noiaje fiojae

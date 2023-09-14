@@ -37,7 +37,7 @@ const Contact = () => {
                         <input  placeholder='enter name' name='name' type="text" />
                         <br />
                         <label htmlFor="">Your email</label><br />
-                        <input placeholder='enter email' required name='email' type="text" />
+                        <input placeholder='enter email' name='email' type="text" />
                         <br />
                         <label htmlFor="">Your phone</label><br />
                         <input required placeholder='enter phone' name='phone' type="text" />

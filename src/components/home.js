@@ -133,7 +133,7 @@ const Home = () => {
                       <h1>{e.name}</h1>
                       <img src={require(`${e.img}`)} alt="" />
                       <h3>{e.buy}</h3>
-                      <button>
+                      <button >
                         <NavLink style={{ color: "#fff", textDecoration: "none" }} to="/Product">
                           Buy
                         </NavLink>
