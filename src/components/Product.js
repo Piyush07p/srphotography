@@ -1,15 +1,17 @@
 import React, { useRef, useState } from 'react'
-
-import { GraphyContext} from "../Context/ProdContext";
+import { GraphyContext} from "../Context/ProdContext"
 import {useContext} from "react";
 
 import '../css/Product.scss'
 const Product = () => {
+
+const {prodname,setprodName,prodPrice,setprodPrice,prodImg,setprodImg}=useContext(GraphyContext);
+
 const quantt = useRef("")
 const priceRef = useRef("")
 
 const [quantVal, setqunatVal] = useState(1)
-const [quantPrice, setqunatPrice] = useState(49)
+const [quantPrice, setqunatPrice] = useState(prodPrice)
 
 const popUp = useRef("")
 const showPopup=(e)=>{
@@ -21,18 +23,19 @@ const showPopup=(e)=>{
 const Counter=(e)=>{
    if(e){
     setqunatVal(quantVal+1)
-    setqunatPrice(quantPrice+49)
+    setqunatPrice(quantPrice+prodPrice)
+    console.log(typeof(prodPrice))
    }
    if(!e){
      if(quantPrice>0){
         setqunatVal(quantVal-1)
-        setqunatPrice(quantPrice-49)
+        setqunatPrice(quantPrice-prodPrice)
      }
 
    }
 }
 
-// const {prodname}= useContext(GraphyContext);
+
   return (
        <section className='Product_sec'>
               <main>
@@ -46,12 +49,11 @@ const Counter=(e)=>{
                           <img src={require('./images/print1.jpeg')} alt="" />
                     </div>
                     <div className='prod_desc'>
-                         <h1>Product name</h1>
+                         <h1>{prodname}</h1>
                          <p>
-                                hjsrbfjkANE aejsfnlasnefoj a;oesf
-                                 oaijfe oiajefnaoief noiaje fiojae
+                           Enter the detail below to get your product delivery on time
                          </p>
-                         <h3>Rs. <h3 ref={priceRef}> {quantPrice}</h3></h3>
+                         <h3>Rs. <h3 ref={priceRef}>{quantPrice}</h3></h3>
                          <div className='quant_detail'>
                             <span onClick={()=>Counter(false)}>-</span>
                             <span ref={quantt}>{quantVal}</span>
@@ -59,17 +61,21 @@ const Counter=(e)=>{
                          </div>
 
                          <div className='buy_detail'>
+                           <form action='https://formspree.io/f/xnqkzjkp' method='POST'>
+                           <input style={{display:"none"}} name="quantity" value={quantVal} /> <br/>
+                           <input style={{display:"none"}} name="productname" value={prodname} /> <br/>
                             <label  required htmlFor="">Enter mobile no.</label><br />
-                            <input name='name' placeholder='enter name' type="text" /> <br />
+                            <input name='phone' required placeholder='enter phone' type="text" /> <br />
                             <label required htmlFor="">Enter email</label><br />
                             <input name='email'  placeholder='enter email' type="text" /><br />
                             <label required htmlFor="">Enter Address</label><br />
-                            <input name='address'  placeholder='enter address' type="text" />
+                            <input name='address'  required placeholder='enter address' type="text" />
+                            <button onClick={()=>showPopup(true)}>Buy</button>
+
+                           </form>
                          </div>
 
-                         <button
-                         onClick={()=>showPopup(true)}>Buy</button>
-
+                        
                     </div>
                 </div>
        </section>

@@ -5,12 +5,16 @@ import App from './App';
 import { HashRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import Footer from './components/footer';
+import ProdContext from './Context/ProdContext';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
       <>
             <HashRouter>
-                <App/>
+                <ProdContext>
+                  <App/>
+                </ProdContext>
             </HashRouter>
          
       </>

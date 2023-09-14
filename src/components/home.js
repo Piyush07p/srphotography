@@ -3,10 +3,12 @@ import '../css/home.scss'
 import { NavLink } from 'react-router-dom'
 import workData from "../Api/work"
 import serviceData from "../Api/service-data"
-import printData from "../Api/printing"
+import printData from "../Api/printing";
+import { GraphyContext} from "../Context/ProdContext"
+import {useContext} from "react";
 
 const Home = () => {
-
+  const {prodname,setprodName,prodPrice,setprodPrice,prodImg,setprodImg}=useContext(GraphyContext);
   const [wData, setwData] = useState(workData)
   const [serData, setserData] = useState(serviceData)
   const [prinData, setprinData] = useState(printData)
@@ -19,6 +21,11 @@ const Home = () => {
       expDiv.current.style.height = "49rem"
     }
     setflag(!flag)
+  }
+  const setItem=(e)=>{
+      setprodName(e.name)
+      setprodPrice(e.buy)
+      console.log(e.buy)
   }
 
   return (
@@ -132,9 +139,9 @@ const Home = () => {
                     <div>
                       <h1>{e.name}</h1>
                       <img src={require(`${e.img}`)} alt="" />
-                      <h3>{e.buy}</h3>
+                      <h3>Rs. {e.buy}</h3>
                       <button >
-                        <NavLink style={{ color: "#fff", textDecoration: "none" }} to="/Product">
+                        <NavLink onClick={()=>setItem(e)} style={{ color: "#fff", textDecoration: "none" }} to="/Product">
                           Buy
                         </NavLink>
                       </button>
