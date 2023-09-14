@@ -25,7 +25,8 @@ const Home = () => {
   const setItem=(e)=>{
       setprodName(e.name)
       setprodPrice(e.buy)
-      console.log(e.buy)
+      setprodImg(e.img)
+      console.log(prodImg)
   }
 
   return (
@@ -133,7 +134,7 @@ const Home = () => {
           <h1>Sublimation Printing</h1>
           <div ref={expDiv} >
             {
-              printData.map((e) => {
+              prinData.map((e) => {
                 return (
                   <>
                     <div>

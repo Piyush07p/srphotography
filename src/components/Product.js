@@ -21,10 +21,10 @@ const showPopup=(e)=>{
        if(!e) popUp.current.style.top="-10rem"
 }
 const Counter=(e)=>{
+  console.log(prodImg)
    if(e){
     setqunatVal(quantVal+1)
     setqunatPrice(quantPrice+prodPrice)
-    console.log(typeof(prodPrice))
    }
    if(!e){
      if(quantPrice>0){
@@ -46,7 +46,7 @@ const Counter=(e)=>{
               </main>
                 <div>
                     <div className='prod_img'>
-                          <img src={require('./images/print1.jpeg')} alt="" />
+                          <img src={require(`${prodImg}`)} alt="" />
                     </div>
                     <div className='prod_desc'>
                          <h1>{prodname}</h1>
