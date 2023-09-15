@@ -64,12 +64,14 @@ const Counter=(e)=>{
                            <form action='https://formspree.io/f/xnqkzjkp' method='POST'>
                            <input style={{display:"none"}} name="quantity" value={quantVal} /> <br/>
                            <input style={{display:"none"}} name="productname" value={prodname} /> <br/>
+                            <label  required htmlFor="">Enter name</label><br />
+                            <input name='name' required placeholder='your name' type="text" /> <br />
                             <label  required htmlFor="">Enter mobile no.</label><br />
-                            <input name='phone' required placeholder='enter phone' type="text" /> <br />
+                            <input name='phone' required placeholder='your phone' type="text" /> <br />
                             <label required htmlFor="">Enter email</label><br />
-                            <input name='email'  placeholder='enter email' type="text" /><br />
+                            <input name='email'  placeholder='your email' type="text" /><br />
                             <label required htmlFor="">Enter Address</label><br />
-                            <input name='address'  required placeholder='enter address' type="text" />
+                            <input name='address'  required placeholder='your address' type="text" />
                             <button onClick={()=>showPopup(true)}>Buy</button>
 
                            </form>
