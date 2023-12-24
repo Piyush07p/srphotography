@@ -13,7 +13,7 @@ const serviceData=[
     {
         id:1,
         name:"Pre-wedding shoot",
-        link:"./images/gal20.jpg",
+        link:"./images/gal24.jpg",
         price:"Rs. 3,999-39,999",
         para:"lorems asEAfijla a fsiojaoisefpja spoejfkop ajspf aiosefj aio;jf oasj foiass"
 

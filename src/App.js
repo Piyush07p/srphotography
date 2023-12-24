@@ -9,6 +9,7 @@ import Booking from './components/Booking.js'
 import Product from './components/Product.js'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Footer from './components/footer.js'
+
 const App = () => {
   return (
     <>

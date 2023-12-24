@@ -42,24 +42,23 @@ const Home = () => {
           </div>
         </div>
 
-        {/* --------------(())--------------- */}
-
+        {/* --------------(( ))--------------- */}
+        <section className='detailSec'>
+           <h1 className='branh1'>Sr Photography</h1>
         <div className="detail_div">
+          
           <div className='home_img'>
 
             <div>
-              <img src={require("./images/photgraph1.png")} alt="img" />
+              <img src={require("./images/intro_img2.jpg")} alt="img" />
             </div>
-            <div>
-              <img src={require("./images/srlogo.png")} alt="img" />
-            </div>
-
           </div>
 
           <div className='home_about'>
             <div>
             <h1> <span style={{ color: "red" }}>S</span>r Photography</h1>
             <h3>Shankar Studio</h3>
+            <br/>
             <p>"Hello, I'm RISHABH PATEL, a professional photographer with 6 years of
                experience capturing moments and memories that last a lifetime. With a
                 keen eye for detail and a passion for creating beautiful images, I've
@@ -71,7 +70,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-
+        </section>
         {/* ----------------------------(end)----------------------------- */}
 
         {/* -----------------------(book_us)---------------------------- */}
@@ -130,6 +129,7 @@ const Home = () => {
           </div>
         </div>
 
+     
         <div className="printItem">
           <h1>Sublimation Printing</h1>
           <div ref={expDiv} >
@@ -157,9 +157,8 @@ const Home = () => {
             <button onClick={expandDiv}>{(flag) ? "See More" : "See Less"}</button>
           </main>
         </div>
-        {/* <div style={{ height: "10rem" }}>
-
-        </div> */}
+    
+       
       </section>
     </>
   )
