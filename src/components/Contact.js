@@ -14,6 +14,7 @@ const Contact = () => {
                 <div>
                      <h1>Contact Us</h1>
                      <div>
+                      <p>Whether you're interested in booking a photoshoot or just want to say hello, feel free to drop a message.</p>
                         <h3>Address</h3>
                         <p><FaLocationDot/> Near Tehsil, Bichi road, Churhat, District-Sidhi (M.P.)-486771</p>
                         <h3>Contact No.</h3>

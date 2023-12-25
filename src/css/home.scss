@@ -159,14 +159,20 @@ html,body{
             .detail_div{
                 width: 90%;
                 background-color: #fff;
+                height: 42rem;
                 margin: 2rem 0rem;
+                object-fit: cover;
+                background-image: url('../components/images/intro_img2.jpg');
+                background-blend-mode:luminosity ;
+                background-repeat: no-repeat;
                  display: flex;
                  justify-content: space-between;
+                 background-size: cover;
                  align-items: center;
-                 padding: 2rem 3rem;
+                 padding: 2rem 1rem;
                  box-sizing: border-box;
                  border-radius: 1rem;
-                 box-shadow: -0.1px 1px 8px rgba(0,0,0,0.3);
+                 box-shadow: -0.1px 1px 3px rgba(0,0,0,0.3);
                  .home_img{
                     // border: 2px solid;
                     width: 50vw;
@@ -184,15 +190,24 @@ html,body{
                     }
                  }
                  .home_about{
-                    width: 50vw;
+                    width: 100%;
                     // height: 20rem;
                     box-sizing: border-box;
+                    color: #fff;
+                    
                     padding:1rem 2rem;
-                    border-radius: 0 3rem 0 3rem;
-                    background-color: rgb(223, 223, 255);
+                   
+                    // background-color: rgb(223, 223, 255);
                     div{
                         h1{
+                            font-size: 4rem;
+                        }
+                        h3{
                             font-size: 2rem;
+                        }
+                        p{
+                            font-size: 1rem;
+                            width: 80%;
                         }
                     }
                 }
@@ -211,6 +226,7 @@ html,body{
                 .detail_div{
                     flex-direction: column;
                     align-items: center;
+                     height: 24rem;
                     .home_img{
                         width:100%;
                     
@@ -218,14 +234,20 @@ html,body{
 
                     .home_about{
                         width: 100%;
-                        // height: 20rem;
                         box-sizing: border-box;
                         padding: 1rem;
-                        border-radius: 0 3rem 0 3rem;
-                        background-color: rgb(223, 223, 255);
+                      
+                        // background-color: rgb(223, 223, 255);
                         div{
                             h1{
-                                font-size: 2rem;
+                                font-size: 2.5rem;
+                            }
+                            h3{
+                                font-size: 1.5rem;
+                            }
+                            p{
+                                font-size: 0.85rem;
+                                width: 85%;
                             }
                         }
                     }
@@ -242,17 +264,25 @@ html,body{
                 .detail_div{
                     flex-direction: column;
                     align-items: center;
+                    height: 25rem;
                     
-                    
-                }
-                .home_about{
-                   font-size: 0.6rem;
-                    div{
-                        h1{
-                            font-size: 1rem;
+                    .home_about{
+                     
+                            div{
+                                h1{
+                                    font-size: 2rem;
+                                }
+                                h3{
+                                    font-size: 1rem;
+                                }
+                                p{
+                                    font-size: 0.72rem;
+                                    width: 100%;
+                                }
+                            }
                         }
-                    }
                 }
+                
               }
            }
 
@@ -289,6 +319,7 @@ html,body{
                 margin:0.5rem 1.5rem;
                 background-color:rgb(69, 68, 68);
                 cursor: pointer;
+                z-index: 20;
                > &:hover{
                     
                 }
@@ -318,11 +349,16 @@ html,body{
         >div{
             width: 90%;
             background-color: #fff;
+            background-image: url('../components/images/bgtheme2.jpeg');
+        // background-blend-mode:luminosity ;
+            background-size: cover;
+            background-repeat: no-repeat;
             padding:1rem 0;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            box-shadow: -0.1px 1px 8px rgba(0,0,0,0.3);
+            box-shadow: -0.1px 1px 3px rgba(0,0,0,0.3);
+
             border-radius: 1rem;
             margin: 0.6rem;
             >div{
@@ -354,7 +390,12 @@ html,body{
             width: 90%;
             // height: 20rem
             background-color: #fff;
-            box-shadow: -0.1px 1px 8px rgba(0,0,0,0.3);
+            background-image: url('../components/images/bgtheme2.jpeg');
+            background-blend-mode:luminosity ;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: -0.1px 1px 3px rgba(0,0,0,0.3);
+
             border-radius: 1rem;
             display: flex;
             justify-content: center;
@@ -416,11 +457,14 @@ html,body{
         }
         >div{
             background-color: #fff;
+            background-image: url('../components/images/bgtheme2.jpeg');
+            background-blend-mode:luminosity ;
+            background-size: cover;
+            background-repeat: no-repeat;
             border-radius: 1rem;
             width: 90%;
             box-sizing: border-box;
-            box-shadow: -0.1px 1px 8px rgba(0,0,0,0.3);
-          
+            box-shadow: -0.1px 1px 3px rgba(0,0,0,0.3);
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -432,11 +476,12 @@ html,body{
                 width: 16rem;
                 padding: 0.4rem;
                 display: flex;
+                background-color: #ededed;
                 border-radius: 1rem;
                 justify-content: center;
                 flex-direction: column;
                 align-items: center;
-                border: 1px solid rgba(0,0,0,0.6);
+                border: 1px solid rgba(0,0,0,0.4);
                 // background-color: rgba(0,0,0,0.8);
                
 
@@ -458,7 +503,7 @@ html,body{
                     border-radius: 5px;
                     border: none;
                     cursor: pointer;
-                    height: 1.8rem;
+                    height: 2.3rem;
                     margin-bottom: 0.5rem;
                      background-color:rgb(69, 68, 68);
                      font-weight: 600;

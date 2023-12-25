@@ -1,5 +1,5 @@
         
-  $theme: rgb(223, 223, 255);
+  $theme: #fff;
 
 .Book_sec{
     display: flex;
@@ -11,6 +11,7 @@
     }
     .bookDetail{
         background-color: $theme;
+        box-shadow: -0.1px 1px 4px rgba(0,0,0,0.3);
         border-radius: 1rem;
         width: 80%;
         margin: 1rem ;

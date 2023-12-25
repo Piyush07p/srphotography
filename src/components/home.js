@@ -47,12 +47,12 @@ const Home = () => {
            <h1 className='branh1'>Sr Photography</h1>
         <div className="detail_div">
           
-          <div className='home_img'>
+          {/* <div className='home_img'>
 
             <div>
               <img src={require("./images/intro_img2.jpg")} alt="img" />
             </div>
-          </div>
+          </div> */}
 
           <div className='home_about'>
             <div>
@@ -109,7 +109,7 @@ const Home = () => {
 
         {/* -------------------(services)------------------------ */}
         <div className='home_service'>
-          <h1>Our Services</h1>
+          <h1>Service Pricing</h1>
           <div>
             {
               serData.map((e) => {
